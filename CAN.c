@@ -19,7 +19,6 @@
 #include "../../../../../framework/driver/can/drv_can.h"
 #include "Definitions.h"
 #include "Timers.h"
-#include "motorHandler.h"
 #include "CAN_Handler/CANFastTransfer.h"
 
 #define CHANNEL_0_CAN 0
