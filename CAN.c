@@ -100,6 +100,7 @@ void CAN_ISR_CALLBACK(void) {
 
         rxPacket.canChannel = CHANNEL;
         rxPacket.canAddress = (uint16_t) RxMessage->msgSID.sid;
+        rxPacket.DLC_Code = RxMessage->msgEID.data_length_code;
         copyMessageArrays(rxPacket.messageContents, RxMessage->data);
 
         //CANbufPut(&rx_FT_buffer,rxPacket);
